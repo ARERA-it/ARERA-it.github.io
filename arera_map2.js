@@ -193,7 +193,7 @@ polygonTemplate.fill = am4core.color("#999");
 
 // Create hover state and set alternative fill color
 var hs = polygonTemplate.states.create("hover");
-hs.properties.fill = am4core.color("#367B25");
+hs.properties.fill = am4core.color("#003e8f");
 
 // Remove Antarctica
 polygonSeries.exclude = ["FR-H", "MT", "VA", "SM"];
@@ -204,7 +204,7 @@ polygonSeries.heatRules.push({
   "property": "fill",
   "target": polygonSeries.mapPolygons.template,
   "min": am4core.color("#ffffff"),
-  "max": am4core.color("#AAAA00"),
+  "max": am4core.color("#8f0000"),
   "minValue": 0.0,
   "maxValue": 100.0
 });
