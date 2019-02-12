@@ -1,11 +1,68 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Página de prueba<title>
-</head>
-<body>
-  <h1>Hola amiguitos!</h1>
-  <footer>gpuma 2017</footer>
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Arera | mappa Italia</title>
+    <link rel="stylesheet" href="arera.css" type="text/css" media="all" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/italyLow.js"></script>
+    <script src="taffy-min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>Static Layout Example</h1>
+    <div class="container">
+      <div class="selectors">
+        <div class="map-selectors">
+          <label for="tip_cliente">Tipologia cliente:</label>
+          <select id="tip_cliente" class="map_dropdown" name="tip_cliente">
+          </select>
+          <label for="mercato">Mercato:</label>
+          <select id="mercato" class="map_dropdown" name="mercato">
+          </select>
+          <label for="anno">Anno:</label>
+          <input type="range" id="slider-anno" name="slider-anno" list="tickmarks" class="map_dropdown">
+          <datalist id="tickmarks"></datalist>
+          <span id="selected-anno"></span>
+
+
+        </div>
+      </div>
+      <div class="main">
+        <div class="item-map">
+          <div id="map"></div>
+        </div>
+        <div class="item">
+          <div id="table-container">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th class="name">Regione</th><th class="val">Valore</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+
+            <button id="download_data">Scarica tutti i dati</button> 
+          </div>
+
+        </div>
+      </div>
+      <div class="item footer"></div>
+    </div>
+
+
+
+    <script src="load_data.js"></script>
+    <script src="arera_map2.js"></script>
+
+  </body>
+
+
 </html>
