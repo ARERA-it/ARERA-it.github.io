@@ -3,6 +3,9 @@ body {
   font-size: 16px;
 }
 
+h1 {
+  text-align: center;
+}
 
 .container {
   display: flex;
@@ -64,4 +67,15 @@ table#table thead tr th {
 #download_data {
   font-size: 1em;
   margin-top: 2em;
+}
+
+.footer {
+  font-size: 0.9em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.footer img {
+
+  width: 120px;
 }
