@@ -156,8 +156,8 @@ function drawMapAndTable(polygonSeries) {
 
 
   $('#selected-anno').html(filteredRegData[0].anno);
-  // polygonSeries.data = filteredData;
-  polygonSeries.data = JSON.parse(JSON.stringify(filteredProvData));
+  polygonSeries.data = filteredProvData;
+  // polygonSeries.data = JSON.parse(JSON.stringify(filteredProvData));
   $('#table tbody').empty();
   $.each(filteredRegData, function(idx, h){
     var v = Math.round(h.value * 10.0) / 10.0;
